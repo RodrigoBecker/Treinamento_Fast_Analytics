@@ -1,0 +1,600 @@
+<!doctype html>
+<html lang="pt">
+
+<head>
+	<meta charset="utf-8">
+
+	<title>Fast Analytics- Academy</title>
+
+	<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
+	<meta name="author" content="Hakim El Hattab">
+
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+	<link rel="stylesheet" href="css/reveal.css">
+	<link rel="stylesheet" href="css/theme/black.css" id="theme">
+
+	<!-- Theme used for syntax highlighting of code -->
+	<link rel="stylesheet" href="lib/css/zenburn.css">
+
+	<!-- Printing and PDF exports -->
+	<script>
+		var link = document.createElement('link');
+		link.rel = 'stylesheet';
+		link.type = 'text/css';
+		link.href = window.location.search.match(/print-pdf/gi) ? 'css/print/pdf.css' : 'css/print/paper.css';
+		document.getElementsByTagName('head')[0].appendChild(link);
+	</script>
+
+	<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+
+</head>
+
+<body>
+
+	<div class="reveal">
+
+		<!-- Any section element inside of this container is displayed as a slide -->
+		<div class="slides">
+			<section data-background="img/fundo.jpg">
+				<h1>Fast Analytics</h1>
+				<h4>Qual a sua estratégia de dados?</h4>
+				<p style="font-size:20px">Descomplicando sua Implantação
+					<p>
+						<p style="font-size:20px">
+							<small>Desenvolvido por
+								<a href="http://academy.fluig.com" target="_blank">fluig Academy</a>
+							</small>
+						</p>
+			</section>
+
+			<section>
+				<img src="img/avatar_becker.png" style="border: 0px; background: none; " />
+				<h3 class="author-name">Rodrigo Becker</h3>
+				<p style="font-size:18px">Full Stack Developer | fluig Academy Expert
+				</p>
+				<p style="font-size: 18px">
+					"Sou apaixonado por tecnologia e negócios e por isso estou aqui! Meu objetivo é ensiná-los como implementar o Fast Analytics
+					um produto de Business Analytics para potencializar suas estratégias de forma assertiva e eficiente. "
+				</p>
+				<div class="menu">
+					<ul style="display: inline-flex;list-style-type:none">
+						<li style="font-size:18px; margin-right: 50px">
+							<a href="mailto:rodrigo.more@totvs.com.br">
+								<img src="img/email.png" style="width: 50px; height: 50px; background: none; box-shadow: none;border: none">
+							</a>
+						</li>
+						<li style="font-size:18px; margin-right: 50px">
+							<a href="https://www.linkedin.com/in/rodrigo-becker/">
+								<img src="img/likedin.png" style="width: 50px; height: 50px; background: none; box-shadow: none;border: none">
+							</a>
+						</li>
+						<li style="font-size:18px; margin-right: 50px">
+							<a href="https://github.com/RodrigoBecker">
+								<img src="img/github.png" style="width: 50px; height: 50px; background: none; box-shadow: none;border: none">
+							</a>
+						</li>
+						<li style="font-size:18px;margin-right: 50px">
+							<a href="https://medium.com/@rodrigo_becker">
+								<img src="img/medium.png" style="width: 50px; height: 50px; background: none; box-shadow: none;border: none">
+							</a>
+						</li>
+					</ul>
+				</div>
+			</section>
+
+			<!-- Example of nested vertical slides -->
+			<section>
+				<section>
+					<h2>Objetivo</h2>
+					<p style="font-size: 20px">Neste treinamento vamos capacitá-lo a no Fast Analytics, o produto extrai os dados dos diversos
+						módulos do Protheus e os envia para a plataforma GoodData. O foco é implementar os indicadores da oferta Fast Analytics,
+						proporcionando a tomada de decisão de informações relevantes para seu negócio.</p>
+				</section>
+				<section>
+					<h2>Vamos falar sobre...</h2>
+					<p class="fragment" style="font-size: 25px"># Conceitos de BI vs BA</p>
+					<p class="fragment" style="font-size: 25px"># E o Big Data?</p>
+					<p class="fragment" style="font-size: 25px"># As dores do mercado</p>
+					<p class="fragment" style="font-size: 25px"># Quais benefícios</p>
+					<p class="fragment" style="font-size: 25px"># A Empresa GoodData</p>
+					<p class="fragment" style="font-size: 25px"># A Módulo de Comercialização TOTVS</p>
+					<p class="fragment" style="font-size: 25px"># O ERP Protheus e sua arquitetura</p>
+					<p class="fragment" style="font-size: 25px"># Módulos Homologados</p>
+					<p class="fragment" style="font-size: 25px"># A Empresa GoodData</p>
+					<p class="fragment" style="font-size: 25px"># Como Implatar?</p>
+					<p class="fragment" style="font-size: 25px"># Etapas de Implantação</p>
+
+				</section>
+
+			</section>
+
+			<section>
+				<h2>BI
+					<span style="font-size: 18px">vs</span> BA</h2>
+				<table style="font-size:18px">
+					<thead>
+						<tr>
+							<th></th>
+							<th>Business Intelligence (BI)</th>
+							<th>Business Analytics(BA)</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td></td>
+							<td>Coleta, analisa e monitora
+								<br>compartilhando as informações</td>
+							<td>Coleta e analisa dados,utilizando análises
+								<br>preditivas por meio de algoritmos analíticos</td>
+						</tr>
+						<tr>
+							<td></td>
+							<td>facilita a interpretação dos dados,
+								<br>identificando novas oportunidades de negócio</td>
+							<td>É possível se antecipar a diversas situações e
+								<br>se preparar com maior assertividade para cenários futuros</td>
+						</tr>
+						<tr>
+							<td></td>
+							<td>Garantir a eficiência operacional</td>
+							</td>
+							<td>Impulsiona a evolução do negócio</td>
+						</tr>
+
+						<tr>
+							<td></td>
+							<td>Melhora a operação, aumenta eficiência e atingimento de metas</td>
+							</td>
+							<td>Analisa a empresa, o mercado e a indústria</td>
+						</tr>
+
+						<tr>
+							<td></td>
+							<td>Otimiza o presente para o sucesso atual</td>
+							</td>
+							<td>Analisa o presente para preparar negócios para o futuro.</td>
+						</tr>
+
+					</tbody>
+				</table>
+			</section>
+
+			<section>
+				<h2>E o Big Data ??</h2>
+
+			</section>
+
+			<section>
+				<h3>BIG Data</h3>
+				<p style="font-size:50px">
+					<span style="font-size:80px">{</span>Volume de Dados +
+					<b>BI</b> +
+					<b>BA</b> =
+					<span style="color:yellow"> BIG DATA ANALYTICS</span>
+					<span style="font-size:80px">}</span>
+				</p>
+			</section>
+			<section>
+				<h2>As Dores do Mercado</h2>
+				<p class="fragment" style="font-size: 25px"># Falta de Informação</p>
+				<p class="fragment" style="font-size: 25px"># Quantidade Execessiva de Planilhas! =(</p>
+				<p class="fragment" style="font-size: 25px"># Informações Distribuidas</p>
+				<p class="fragment" style="font-size: 25px"># Problemas na tomada de decisão</p>
+				<p class="fragment" style="font-size: 25px"># A Empresa GoodData</p>
+
+			</section>
+
+			<section>
+				<h2>Benefícios</h2>
+				<p class="fragment" style="font-size: 25px"># Aumento de Margens / Crescimento de Receitas </p>
+				<p class="fragment" style="font-size: 25px"># Redução de Riscos</p>
+				<p class="fragment" style="font-size: 25px"># Redução de Custos</p>
+				<p class="fragment" style="font-size: 25px"># Maior Controle e Expansão da Operação</p>
+
+			</section>
+
+
+			<section>
+				<section>
+					<h1> GoodData ??</h1>
+				</section>
+				<section>
+					<h2>Conhecendo um pouco mais!</h2>
+				</section>
+				<section>
+					<img src="img/gd.png" style="width: 126px; height: 126px;border: 0px; background: none;  " />
+					<blockquote>
+						<p style="font-size: 25px">Sediada em São Francisco, nos EUA, a GoodData possuí uma plataforma de
+							<strong style="color:yellow">Business Intelligence</strong> na nuvem com mais de 40 mil clientes em todo o mundo.
+							A parceria TOTVS e GoodData iniciou em 2014, onde a TOTVS possuí exclusividade de comercialização da plataforma em
+							toda América Latina, com mais de 800 clientes.
+						</p>
+					</blockquote>
+				</section>
+				<section>
+					<ul style="list-style-type:none">
+						<li style="font-size: 25px">
+							<strong style="font-size: 60px">+170 mil</strong> Usuários Satisfeitos</li>
+						<li style="font-size: 25px">
+							<strong style="font-size: 60px">99,5% mil</strong> SLA de disponibilidade</li>
+						<li style="font-size: 25px">
+							<strong style="font-size: 60px">+ 3 milhões</strong> de integrações de dados por semana</li>
+
+				</section>
+				<section>
+					<h2>(BI + CLOUD + SAAS) =
+						<span style="color:yellow">PLATAFORMA GOODDATA</span>
+					</h2>
+				</section>
+
+				<section>
+					<h3>Simplificando sua Arquitetura =) </h3>
+				</section>
+
+				<section>
+					<img src="img/arquitetura_goodData.png" style="border: 0px; background: none; width: 800px; height: 675px" />
+				</section>
+				<section>
+					<h2>O que é um projeto?
+						<h2>
+				</section>
+				<section>
+
+					<p style="font-size:25px">É o contexto no qual será inserido todas as informações do cliente na plataforma,gerando assim
+						sua visão analítica.</p>
+					<img class="fragment" src="img/fast.png" style="border: 0px; background: none; width:500px; height:642px;" />
+				</section>
+
+			</section>
+
+			<section>
+				<h4>Comercialização</h4>
+				<table style="font-size:18px">
+					<thead>
+						<tr>
+							<th class="fragment fade-out">
+								<strike>TOTVS Smart Analytics</strike>
+							</th>
+							<th>GoodData</th>
+							<th>
+								<span style="color:yellow">TOTVS Fast Analytics</span>
+							</th>
+							<th>fluig Analytics</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="fragment fade-out">
+								<strike>Uso exclusivo dos dados dos ERPs TOTVS</strike>
+							</td>
+							<td>Se tiver o ERP TOTVS TSA está incluso</td>
+							<td>Integração nativa com Banco de dados dos ERP</td>
+							<td>Uso exclusivo dos dados do fluig</td>
+						</tr>
+
+						<tr>
+							<td class="fragment fade-out">
+								<strike>Liberação de um projeto</strike>
+							</td>
+							<td>Licenças pelo número de usuários e consumo de espaço de projetos</td>
+							<td>Dashboard e Relatórios customizados por segmentos</td>
+							<td>Liberação de dois projetos</td>
+						</tr>
+						<tr>
+							<td class="fragment fade-out">
+								<strike>Não altera modelo de dados</strike>
+							</td>
+							<td>Altera modelo para qualquer sistema</td>
+							<td>Não altera modelo de dados</td>
+							<td>Não altera modelo de dados</td>
+						</tr>
+					</tbody>
+				</table>
+			</section>
+
+			<section>
+				<h1>Fast Analytics</h1>
+				<h3>Protheus</h3>
+			</section>
+
+
+			<section>
+				<h3>O fast Analytics é um subproduto da plataforma GoodData</h3>
+			</section>
+
+
+
+			<section>
+				<p style="font-size:25px">A vantagem do fast é sua
+					<b>rápida implantação</b>, permitindo o que cliente já tenha seus dados contruídos em um conjunto de visualizações sem
+					muito esforço.
+				</p>
+			</section>
+
+			<section>
+				<p style="font-size:25px">Para cada ERP existe um
+					<b>FAST</b> específico que irá realizar a extração dos dados conforme as particularidades da base de dados.
+				</p>
+			</section>
+
+			<section>
+				<h2>Arquitetura</h2>
+				<p>PROTHEUS</p>
+			</section>
+
+			<section>
+				<p style="font-size: 25px"> O ERP protheus como sabemos é um dos produtos da TOTVS e que possui uma diversidade de frentes
+					de atuação para o seu négocio, os chamados
+					<b> Módulos</b>. O
+					<span style="color:yellow">Fast Analytics</span> veio justamente para sanar a dor do BI no ERP, permitindo trazer esta
+					visão analítica.
+				</p>
+			</section>
+
+
+			<section>
+				<p style="font-size: 45px">E para isto precisamos entender um pouco da sua configuração...</p>
+				</p>
+			</section>
+
+			<section>
+				<h2>O que é um Patch??</h2>
+			</section>
+
+			<section>
+				<p style="font-size: 25px">No Protheus, o seu funcionamento "core" roda por meio de um
+					<b>.RPO</b>, ou seja um arquivo que determina todas as configurações e funcionamento do ERP, e quando precisamos aplicar
+					determinada atualizações seja no protheus ou no seus módulos precisamos de um
+					<span style="color: yellow">PATCH</span>, esse patch modifica as configurações do ERP,
+					<b>atualizando</b> e
+					<b>adicionando melhororias</b>
+					e também
+					<b>novas funcionalidades</b>.
+					</h2>
+			</section>
+
+			<section>
+				<section>
+					<h2>Por Onde começar??</h2>
+				</section>
+				<section>
+					<h1>1º ETAPA</h1>
+					<p style="font-size:24px">Abertura de Chamado ao
+						<span style="color:yellow">suporte.gd@totvs.com.br</span>
+					</p>
+					<p style="font-size: 18px">Neste email deve conter as seguintes informações:</p>
+					<ul style="font-size: 18px">
+						<li>TCODE (Codigo do cliente)</li>
+						<li>Nome do Cliente</li>
+						<li>Proposta Comercial assinada da Contratação do Fast Analytics</li>
+					</ul>
+					<p style="font-size: 18px">Essa solicitação pode partir das seguintes entidades: ->
+						<b>CP</b> / ->
+						<b>CLIENTE</b> / ->
+						<b>ANALISTA</b>
+					</p>
+				</section>
+
+				<section>
+					<h1>2º Etapa</h1>
+					<p style="font-size:24px">Retorno da solicitação do suporte GD</p>
+					<p style="font-size: 18px">Neste email deve conter as seguintes informações:</p>
+					<ul style="font-size: 18px">
+						<li>Convite para o projeto</li>
+						<li>Arquivo *.ZIP com do
+							<span style="color:yellow">BaInstaller</span> e o
+							<span style="color:yellow">Extrator Agent*</span>
+						</li>
+					</ul>
+				</section>
+
+				<section>
+					<h1>3º ETAPA</h1>
+					<p style="font-size:24px">Aplicando o Patch BaInstaller
+						<p style="font-size: 18px">Nesta etapa, o cliente deverá aplicar o patch em seu ambiente, através do <b>TDS</b> (Totvs
+							Developer Studio).</p>
+						<p style="font-size: 18px"> É importante ressaltar a utilização de ambientes de <b>Homologação</b> | <b>Produção</b>
+
+
+
+				</section>
+				<section>
+					<img src="img/fluxo_patch.png" style="border: 0px; background: none; width: 600px; height: auto" />
+
+				</section>
+
+
+				<section>
+					<h1>4º ETAPA</h1>
+					<p style="font-size:24px">Trabalhando com o Extrator AGENT (TOTVS)
+						<p style="font-size: 18px">Nesta etapa, voçê deverá configurar o pacote do agent para que seja feita toda a extração
+							da massa de dados do ERP PROTHEUS</p>
+						<p style="font-size: 18px"> É importante ressaltar que o Agent é uma classe java desenvolvida especificamente para
+							tratar a extração e envio dos dados locais para a nuvem.
+
+				</section>
+
+				<section>
+					<img src="img/arquitetura_fast.png" style="border: 0px; background: none; width: 600px; height: auto" />
+				</section>
+
+				<section>
+					<h2>Configurando o Agent</h2>
+				</section>
+
+				<section>
+					<img src="img/processo_fast.png" style="border: 0px; background: none; width: 600px; height: auto" />
+				</section>
+				<section>
+					<h3>O que é o arquivo <a href="index.html#/19/10" style="color:yellow">[my].properties</a>?</h3>
+				</section>
+				<section>
+					<p style="font-size:25px;">No arquivo temos os parâmetros que deveremos alimentar de acordo com as informações do projeto
+						como também end-point do banco de dados do ERP de onde ocorrerá a extração de dados.
+					</p>
+				</section>
+				<section>
+						<h2>Parametrizando</h2>
+						<pre><code class="php hljs" data-trim contenteditable>
+								################################################
+								###     Parâmetros obrigatórios do Agent     ###
+								################################################
+								# Credenciais
+								gdc.username=rodrigo.more@totvs.com
+								gdc.password=p@ssw0rd
+								
+								# Pasta onde o arquivo zip será adicionado.
+								gdc.upload_url=https://na1-di.gooddata.com/project-uploads/rtt4xrfpfz6x4t4x65b0m4hg2st6tssd/today/
+								
+								# Nome do arquivo zip.
+								gdc.upload_archive=PROTHEUS.zip
+								
+								# Parâmetro responsável por verificar se será utilizado criptografia de senhas.
+								gdc.crypto=FALSE
+								
+								# Backup
+								gdc.backup=TRUE
+								
+								# Configuração do caminho e job de ETL.
+								gdc.etl.process_url=https://analytics.totvs.com.br/gdc/projects/rtt4xrfpfz6x4t4x65b0m4hg2st6tssd/dataload/processes/8b3ffe6e-f9cc-4201-9399-02b34896733d/
+								gdc.etl.graph=Protheus/graph/_Main.grf
+								
+								################################################
+								### Parametros específicos do FAST Analytics ###
+								################################################
+								# Configuração do modo de carga do ETL (FullLoad / Incremental):
+								# gdc.etl.param.LOAD_MODE_FCT - Define o modo de carga dos datasets de fato.
+								# gdc.etl.param.LOAD_MODE_DIM - Define o modo de carga dos datasets de dimens�o.
+								#                               POSS�VEIS VALORES: FULL_LOAD
+								#                                                  INCREMENTAL
+								gdc.etl.param.LOAD_MODE_FCT=FULL_LOAD
+								gdc.etl.param.LOAD_MODE_DIM=FULL_LOAD
+								
+								################################################
+								###   Configuração para leitura de pastas    ###
+								################################################
+								#Diretório que o Agent irá ler os arquivos.
+								#filesystem.input_dir=Dados
+								
+								#Extensões válidas de arquivos.
+								#filesystem.wildcard=*.*
+								
+								################################################
+								###    Configuração de conexão SQLServer     ###
+								################################################
+								jdbc.driver_path=jdbc/sqljdbc4.jar
+								jdbc.driver=com.microsoft.sqlserver.jdbc.SQLServerDriver
+								jdbc.url=jdbc:sqlserver://SPON010108647:1433;DatabaseName=P12117MNT
+								jdbc.username=sa
+								jdbc.password=totvs@1234
+								
+								param.START_DATE=19800101
+								param.FINAL_DATE=20180507
+								param.EXTRACTION_DATE='20180507'
+								
+								################################################
+								###     Configuração de conexão Oracle       ###
+								################################################
+								#jdbc.driver_path=jdbc/ojdbc6.jar
+								#jdbc.driver=oracle.jdbc.driver.OracleDriver
+								#jdbc.url=dbc:oracle:thin:@<HOST>:<PORT>:<SID>
+								#jdbc.username=<DATABASE_USERNAME>
+								#jdbc.password=<DATABASE_PASSWORD>
+								
+								#param.START_DATE=ADD_MONTHS(SYSDATE, -3)
+								#param.FINAL_DATE=SYSDATE
+								#param.EXTRACTION_DATE='20180507'
+								
+								################################################
+								###   Exemplos de conexão c/ banco de dados  ###
+								################################################
+								# Exemplos de Drivers
+								#
+								# IBM DB2
+								# jdbc.url=jdbc:db2://<HOST>:<PORT>/<DB>
+								# jdbc.driver=com.ibm.db2.jdbc.app.DB2Driver
+								#
+								# Oracle Thin
+								# jdbc.url=dbc:oracle:thin:@<HOST>:<PORT>:<SID>
+								# jdbc.driver=oracle.jdbc.driver.OracleDriver
+								#
+								# PostgreSQL (v7.0 and later)
+								# jdbc.url=jdbc:postgresql://<HOST>:<PORT>/<DB>
+								# jdbc.driver=org.postgresql.Driver
+								#
+								# Microsoft SQL Server 2000 (Microsoft Driver)
+								# jdbc.url=jdbc:microsoft:sqlserver://<HOST>;DatabaseName=<DB>
+								# jdbc.driver=com.microsoft.sqlserver.jdbc.SQLServerDriver
+								#
+								# jdbc.driver_path=Diretório onde está o arquivo jdbc.jar. Ex: "/jdbc/sqljdbc4.jar"
+								
+								
+							</code></pre>
+					</section>
+			
+			</section>
+
+			<section data-background="img/fundo2.png">
+				<div style="margin-right: 650px; margin-top: 200px">
+					<h3 style="text-align: right; margin-bottom: 0px">Obrigado!</h3>
+					<p style="font-size: 18px; text-align:right ;; margin-bottom: 0px"><b>Rodrigo Becker</b></p>
+					<p style="font-size: 12px; text-align:right; margin: 0px 0px 0px 0px ">Fluig Academy</p>
+					<p style="font-size: 12px; text-align:right; margin: 0px 0px 0px 0px ">rodrigo.more@totvs.com.br</p>
+
+
+				</div>
+				<div style="margin-left: 580px; margin-top: 100px">
+					<p style="font-size: 16px; text-align: left"><b>Tecnologia</b> + <b>Conhecimento</b> são nosso DNA.</p>
+					<p style="font-size: 16px; text-align: left">O sucesso do cliente é nosso sucesso.</p>
+					<p style="font-size: 16px; text-align: left">Valorizamos gente boa que é boa gente.</p>
+					<p style="font-size: 20px; text-align: left"><b>#SOMOSTOTVERS</b></p>
+
+				</div>
+
+
+			</section>
+
+
+
+		</div>
+
+	</div>
+
+
+
+	<script src="lib/js/head.min.js"></script>
+	<script src="js/reveal.js"></script>
+
+	<script>
+
+		// More info https://github.com/hakimel/reveal.js#configuration
+		Reveal.initialize({
+			controls: true,
+			progress: true,
+			history: true,
+			center: true,
+
+			transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+			// More info https://github.com/hakimel/reveal.js#dependencies
+			dependencies: [
+				{ src: 'lib/js/classList.js', condition: function () { return !document.body.classList; } },
+				{ src: 'plugin/markdown/marked.js', condition: function () { return !!document.querySelector('[data-markdown]'); } },
+				{ src: 'plugin/markdown/markdown.js', condition: function () { return !!document.querySelector('[data-markdown]'); } },
+				{ src: 'plugin/highlight/highlight.js', async: true, callback: function () { hljs.initHighlightingOnLoad(); } },
+				{ src: 'plugin/search/search.js', async: true },
+				{ src: 'plugin/zoom-js/zoom.js', async: true },
+				{ src: 'plugin/notes/notes.js', async: true }
+			]
+		});
+
+	</script>
+</body>
+
+</html>
